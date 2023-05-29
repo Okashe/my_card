@@ -57,6 +57,29 @@ void main() {
                   ],
                 ),
               ),
+              Container(
+                color: Colors.white,
+                margin: const EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 25.0),
+                padding: const EdgeInsets.all(10.0),
+                child: Row(children: <Widget>[
+                  const Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  const SizedBox(
+                    width: 20.0,
+                  ),
+                  Text(
+                    'okashabdi88@gmail.com',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20.0,
+                    ),
+                  ),
+                ]),
+              )
             ],
           ),
         ),
