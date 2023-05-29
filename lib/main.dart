@@ -36,47 +36,39 @@ void main() {
                 color: Colors.white,
                 margin: const EdgeInsets.symmetric(
                     vertical: 10.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    const Icon(
-                      Icons.phone,
-                      color: Colors.teal,
-                    ),
-                    const SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '+44 123 456 789',
-                      style: TextStyle(
-                        color: Colors.teal.shade900,
-                        fontFamily: 'Source Sans Pro',
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                color: Colors.white,
-                margin: const EdgeInsets.symmetric(
-                    vertical: 10.0, horizontal: 25.0),
-                child: Row(children: <Widget>[
-                  const Icon(
-                    Icons.email,
+                child: ListTile(
+                  leading: const Icon(
+                    Icons.phone,
                     color: Colors.teal,
                   ),
-                  const SizedBox(
-                    width: 10.0,
-                  ),
-                  Text(
-                    'okashabdi88@gmail.com',
+                  title: Text(
+                    '+44 123 456 789',
                     style: TextStyle(
                       color: Colors.teal.shade900,
                       fontFamily: 'Source Sans Pro',
+                      fontSize: 20.0,
                     ),
                   ),
-                ]),
-              )
+                ),
+              ),
+              Card(
+                  color: Colors.white,
+                  margin: const EdgeInsets.symmetric(
+                      vertical: 10.0, horizontal: 25.0),
+                  child: ListTile(
+                    leading: const Icon(
+                      Icons.email,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      'okashabdi88@gmail.com',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.teal.shade900,
+                        fontFamily: 'Source Sans Pro',
+                      ),
+                    ),
+                  ))
             ],
           ),
         ),
